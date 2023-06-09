@@ -44,8 +44,7 @@ jobs:
       - name: Run a one-line script
         run: |
           pwd
-          ls -la
-          cd $GITHUB_WORKSPACE
+          cd ${{ github.workspace }}/go/src/github.com/${{ github.repository }}
           pwd
           ls -la
           echo Hello, world!
